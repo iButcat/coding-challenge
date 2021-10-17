@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func TwoSum(numbers []int, target int) [2]int {
 	var tupleRes = [2]int{}
 	var length int = len(numbers)
@@ -12,4 +14,10 @@ func TwoSum(numbers []int, target int) [2]int {
 		}
 	}
 	return tupleRes
+}
+
+func main() {
+	var numbers = []int{1, 3, 6, 7, 8}
+	var target = 7
+	fmt.Println(TwoSum(numbers, target)) // 0 & 2
 }
